@@ -1,7 +1,4 @@
-body {
-	max-width: 1920px;
-	margin: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap');
 
 * {
 	font-family: 'Inter', sans-serif;
@@ -77,6 +74,11 @@ body {
 
 }
 
+.carousel-item img {
+	width: 100%;
+	height: auto;
+}
+
 #about-me {
 	flex: 2
 }
@@ -97,10 +99,6 @@ body {
 #about-me p {
 	width: 80%;
 	font-size: 14px;
-}
-
-#gallery {
-	/*	min-height: 100vh; */
 }
 
 .title {
@@ -228,17 +226,6 @@ body {
 	display: flex;
 }
 
-.picture.right::before {
-	content: ' ';
-	background-color: #BEB45A;
-	width: 374px;
-	height: 329px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
-}
-
 .form-container {
 	flex: 2;
 
@@ -320,7 +307,8 @@ input[type="submit"] {
 		margin-top: 1em;
 	}
 
-	#services .container {
+	#services .container,
+	#contact .container {
 		flex-direction: column;
 	}
 
@@ -342,10 +330,6 @@ input[type="submit"] {
 		right: 0;
 		left: auto;
 		z-index: 0;
-	}
-
-	#contact .container {
-		flex-direction: column;
 	}
 
 	#contact .picture.right {
